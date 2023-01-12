@@ -1,0 +1,18 @@
+.img-banner{
+    width: 113%;
+    object-fit: cover;
+    margin-left: -100px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 24px;
+    filter : brightness(50%)
+}
+
+.banner-text{
+    color: white;
+    position: absolute;
+    top: 250px; right: 550PX;
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+}
