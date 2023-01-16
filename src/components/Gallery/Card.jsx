@@ -3,7 +3,7 @@ import './card.css'
 export default function Card(){
     return(
         <div>
-            <h1>Card</h1>
+            <section>Card</section>
         </div>
     )
 }
