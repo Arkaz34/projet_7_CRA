@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-import Card from './components/Gallery/Card';
-import Error from './components/Error/Error'
-import About from './components/About/About'
-
+import Home from './Pages/Home/Home';
+// import FicheLogement from './Pages/FicheLogement/FicheLogement.jsx';
+import Error from './Pages/404/Error'
+import About from './Pages/About/About'
+//import Footer from './components/Footer/Footer.jsx'
 
 export default function App() {
   return (
@@ -12,11 +12,11 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Card" element={<Card />} />
-        <Route path="/Error" element={<Error />} />
+        {/* <Route path="/Logement" element={<FicheLogement />} /> */}
+        <Route path="*" element={<Error />} />
         <Route path="/About" element={<About />} />
       </Routes>
-      
+      {/* <Footer /> */}
     </div>
   );
 }
