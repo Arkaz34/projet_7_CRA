@@ -1,13 +1,14 @@
 import Banner from '../../components/Banner/Banner'
-//import Card from '../../components/Cards/Card'
+import Card from '../../components/Cards/Card'
 import React, { useState, useEffect } from 'react'
 //import { Link } from 'react-router-dom'
 import getData from '../../Data/getData'
 import './home.css'
 
 export default function Home() {
-    const [data, setData] = useState([])
-    console.log(data);
+    const [data, setData] = useState([]);
+    
+    
     useEffect(() => {
         setData(getData)
     }, []);
@@ -15,12 +16,11 @@ export default function Home() {
     return (
         <div>
             <Banner />
-            <div >
+            <div className='block-section-card'>   
             {data.map((appart, id) => {
                 return (
                     <div key={id}>
-                        <p>{appart.cover}</p>
-                    {/* <Card /> */}
+                        <Card cover={appart.cover} title={appart.title}/>
                     </div>
             )})}
 			</div>
