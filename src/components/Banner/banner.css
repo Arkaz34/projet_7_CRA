@@ -9,7 +9,7 @@
 .img-banner{
     border-radius: 25px;
     width: 100%;
-    object-fit: cover;
+    height: 200px;
     filter : brightness(50%)
 }
 
@@ -18,8 +18,8 @@
     height: 100%;
     color:white;
     position: absolute;
-    top: 170px;
-    left: 73%;
+    top: 180px;
+    left: 75%;
     transform: translate(-50%, -50%);
-    font-size: 48px;
+    font-size: 45px;
   }
