@@ -4,11 +4,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .link-block{
     width: 30%;
     position: relative;
-    margin: 10px 10px 10px 10px;
+    margin: 20px 10px 10px 10px;
 }

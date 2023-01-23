@@ -4,7 +4,7 @@ import Home from './Pages/Home/Home';
 import FicheLogement from './Pages/FicheLogement/FicheLogement';
 import Error from './Pages/404/Error'
 import About from './Pages/About/About'
-import Footer from './components/Footer/Footer.jsx'
+import Footer from './components/Footer/Footer'
 
 export default function App() {
   return (
@@ -17,6 +17,7 @@ export default function App() {
         <Route path="/About" element={<About />} />
       </Routes>
       <Footer />
+      
     </div>
   );
 }

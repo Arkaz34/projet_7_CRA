@@ -1,18 +1,12 @@
-import { useState } from "react";
+import left from '../../assets/Vector-left.png'
+import right from '../../assets/Vector-right.png'
 
+export default function Carrousel() {
 
-export default function Carrousel({pictures}){
-
-    const displayPicture = useState([]);
-
-    return (     
-            <div>
-                {displayPicture.map((image, index) => {
-                    return(
-                <img key={index} src={image} alt='location'/>
-                )
-                })}
-            </div>
-        
+    return (
+        <div className='block'>
+            <img src={left} alt="gauche" className='block-left'/>
+            <img src={right} alt="droite" />
+        </div>
     )
-}
+};

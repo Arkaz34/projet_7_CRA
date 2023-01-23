@@ -1,15 +1,16 @@
 .nav-header{
     display: flex;
-    margin-top: 18px;
-    align-items: center;
+    margin-top: 40px;
     justify-content: space-between;
-
 }
+.nav-header :hover{
+    border-bottom: 2px solid #ff6060;
+}
+
 .navbar{
+    height: 26px;
     color: #FF6060;
     font-size: 24px;
     margin-left: 100px;
-}
-.navbar.active {
-    border-bottom: 1px solid #ff6060;
+    text-decoration: none;
 }

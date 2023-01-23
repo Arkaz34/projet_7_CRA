@@ -1,4 +1,4 @@
-import logo from '../../assets/LOGO.png';
+import logo from '../../assets/LOGO-kasa.png';
 import Nav from '../Nav/Nav'
 import './header.css'
 
