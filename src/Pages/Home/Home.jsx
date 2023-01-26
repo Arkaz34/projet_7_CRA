@@ -1,5 +1,5 @@
-import Banner from '../../components/BannerHome/Banner'
-import Card from '../../components/Cards/Card'
+import Banner from '../../components/BannerHome/Banner/Banner'
+import Card from '../../components/BannerHome/Cards/Card'
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import getData from '../../Data/getData'

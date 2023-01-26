@@ -1,18 +1,24 @@
-import Carrousel from '../../components/Carrousel/Carrousel';
+import Carrousel from '../../components/DetailFicheLogement/Carrousel';
 import getpost from '../../Data/data.json'
-import Title from '../../components/DetailFicheLogement/Title'
+import Fichetitle from '../../components/DetailFicheLogement/Title'
+//import { useState } from 'react';
 
 export default function FicheLogement() {
 
     const rentalUrlId = window.location.pathname.split('/').slice(-1)[0];
     const data = getpost;
     const rental = data.find((item) => item.id === rentalUrlId);
-    console.log(rental);
+    
+
+
+
     return (
         <div>
             <section>
-            <Carrousel />
-            <div className='block-logement'><Title /></div>
+            <Carrousel slides={rental.picture}/>
+            <div className='block-logement'>
+            <Fichetitle titre={rental.title} location={rental.location}/>
+            </div>
             
             </section>
         </div>

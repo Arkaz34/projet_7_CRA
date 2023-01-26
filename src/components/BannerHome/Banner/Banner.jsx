@@ -1,4 +1,4 @@
-import Imgbanner from '../../assets/IMG.png'
+import Imgbanner from '../../../assets/IMG.png'
 import React from 'react'
 import './banner.css'
 

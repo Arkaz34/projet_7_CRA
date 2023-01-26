@@ -1,6 +1,9 @@
-export default function title(){
+export default function ficheTitle(props){
 
     return(
-        <h2>title</h2>
+        <div className="fiche-block-title">
+            <h2>{props.titre}</h2>
+            <h3>{props.location}</h3>
+        </div>
     )
 }

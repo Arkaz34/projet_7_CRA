@@ -11,8 +11,8 @@ export default function Dropdown({ title, description }) {
     }//fonction toggle qui permet d'inverser la valeur de closed
 
     return (
-        <div className='block-drop'>
-            <div onClick={toggle} className='block-title'>
+        <div className='drop-block'>
+            <div onClick={toggle} className='drop-block-title'>
                 <h2 className='drop-title'>{title}</h2>
                 <img
                     src={DropdownImg}
@@ -21,7 +21,7 @@ export default function Dropdown({ title, description }) {
                 />
             </div>
             <Fade hide={closed}>
-                <div className='block-text'>
+                <div className='drop-block-text'>
                     <p className='drop-text'>{description}</p>
                 </div>
             </Fade>

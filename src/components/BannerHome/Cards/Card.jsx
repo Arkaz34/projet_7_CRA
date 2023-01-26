@@ -1,5 +1,5 @@
 import './card.css'
-//function card avec deux props cover et title
+
 export default function Card({cover, title}){
     return (
         <div  className='block-card'>
