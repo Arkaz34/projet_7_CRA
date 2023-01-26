@@ -1,9 +1,12 @@
+import './fade.css'
 
-export default function Fade({ visible, children }) {
+export default function Fade({ hide, children }) {
+    
     let className = 'fade';
-    if (!visible) {
+    if (!hide) {
         className += ' out';
     }
+
     return (
     <div className={className}>{children}</div>
     )

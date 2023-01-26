@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import getData from '../../Data/getData'
 import './home.css'
+
 //stocker la data api (getData depuis le fichier Data.json en local) dans le state
 export default function Home() {
     //hook useState
@@ -15,7 +16,7 @@ export default function Home() {
     }, []);
     
     return (
-        <div>
+        <div className='block-home'>
             <Banner />
             <div className='block-section-card'> 
                 {data.map((appart, id) => {

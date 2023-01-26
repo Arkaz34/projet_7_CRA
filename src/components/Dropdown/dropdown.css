@@ -9,6 +9,9 @@
     border-radius: 5px;
     height: 48px;
 }
+.block-title:hover {
+    cursor: pointer;   
+}
 .drop-title {
     font-size: 24px;
     font-weight: 500;
@@ -17,20 +20,36 @@
     margin-left: 20px;
 }
 .drop-img {
-    width: 24px;
     margin-right: 20px;
-    height: 14px;
+    transform: rotate(0deg);
+    transition: 0.4s ease-in-out;
+}
+.rotated {
+	transform: rotate(180deg);
+	transition: 0.4s ease-in-out;
 }
 .block-text{
     background-color: #F7F7F7;
-    margin-top: -16px;
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 0;
+    color: #FF6060;
+    transition: 0.4s ;
+
+}
+.out .block-text{
     height: 125px;
 }
+.drop-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 0.4s ;
+    padding-left: 20px;
+    padding-right: 20px;
 
-.drop-text {
-    color: #FF6060;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 20px;
+}
+.out .drop-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 33px;
+
 }
