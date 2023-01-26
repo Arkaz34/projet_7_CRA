@@ -2,11 +2,8 @@
     opacity: 0;
     height: 0;
     transition: 0.4s;
-
 }
 .fade.out{
     opacity: 1;
     height: 125px;
-    transition: 0.3s;
-
 }

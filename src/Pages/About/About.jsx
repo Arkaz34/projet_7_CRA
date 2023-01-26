@@ -7,7 +7,7 @@ import Dropdown from '../../components/Dropdown/Dropdown'
 
 export default function APropos(){
 
-    // const []
+
     return(
         <div>
             <BannerAbout image={ImgBannerAbout} />
