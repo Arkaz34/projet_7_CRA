@@ -1,0 +1,9 @@
+.content-text{
+    width: 67px;
+    background: #FF6060;
+}
+.block-tags{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}

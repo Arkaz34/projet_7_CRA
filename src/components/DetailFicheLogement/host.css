@@ -1,0 +1,13 @@
+.block-host{
+    display: flex;
+    justify-content: space-between;
+}
+.host-name{
+    color : #FF6060;
+    font-size: 18px;
+}
+.host-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+}

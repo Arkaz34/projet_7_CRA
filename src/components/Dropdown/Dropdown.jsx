@@ -1,5 +1,5 @@
 import './dropdown.css';
-import DropdownImg from "../../assets/Vector.png";
+import DropdownImg from "../../assets/Vector-bottom.png";
 import { useState } from 'react';
 import Fade from '../AnimationDrop/Fade';
 

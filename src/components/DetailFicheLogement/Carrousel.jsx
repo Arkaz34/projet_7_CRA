@@ -2,16 +2,17 @@
 //import left from '../../assets/Vector-left.png'
 //import right from '../../assets/Vector-right.png'
 
-export default function Carrousel(slides) {
 
-    console.log(slides);
-    
+export default function Carrousel(props) {
 
+    //state (état, données)
+
+    //comportements
+
+    //affichage (render)
     return(
         <div>
-            <div>
-                <img src={slides} alt='carrousel' />
-            </div>
+            <img src={props.pictures} alt="logement" />
         </div>
     )
 };

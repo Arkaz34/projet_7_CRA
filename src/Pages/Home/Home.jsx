@@ -7,9 +7,8 @@ import './home.css'
 
 //stocker la data api (getData depuis le fichier Data.json en local) dans le state
 export default function Home() {
-    //hook useState
+
     const [data, setData] = useState([]);
-    console.log(data);
     
     useEffect(() => {
         setData(getData);
