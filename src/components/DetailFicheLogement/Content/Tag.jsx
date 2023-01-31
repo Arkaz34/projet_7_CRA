@@ -1,4 +1,4 @@
-import './content.css'
+import './tag.css'
 
 export default function Content(props) {
 

@@ -5,11 +5,15 @@ import Fade from '../AnimationDrop/Fade';
 
 export default function Dropdown({ title, description }) {
 
+    //state (état, données)
     const [closed, setOpen] = useState(true);//valeur inisiale et vrai
+
+    //comportements
     const toggle = () => {
         setOpen(!closed);
     }//fonction toggle qui permet d'inverser la valeur de closed
 
+    //affichage (render)
     return (
         <div className='drop-block'>
             <div onClick={toggle} className='drop-block-title'>

@@ -11,8 +11,8 @@ export default function Carrousel(props) {
 
     //affichage (render)
     return(
-        <div>
-            <img src={props.pictures} alt="logement" />
+        <div className="block-carrousel">
+            {props.pictures}
         </div>
     )
 };
