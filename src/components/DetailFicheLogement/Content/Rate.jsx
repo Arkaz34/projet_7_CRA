@@ -5,7 +5,6 @@ import starGrey from '../../../assets/Star-grey.png'
 export default function stars(score) {
 
     const stars = [1, 2, 3, 4, 5];
-    console.log(stars);
 
     //affichage
     return (

@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     font-size: (12px, 500);
-    color: white;
+    color: var(--texte-color);
     width: 100%;
     margin: 4% 0 3% 0;
 }

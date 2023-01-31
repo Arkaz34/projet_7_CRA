@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     margin-top: 40px;
-
 }
 .img-banner{
     border-radius: 25px;
@@ -11,12 +10,11 @@
     filter : brightness(50%);
     object-fit: cover;
 }
-
 .banner-text{
     width: auto;
-    color:white;
+    color: var(--texte-color);
     position: absolute;
     top: 74px;
     left: 26%;
     font-size: 45px;
-  }
+}

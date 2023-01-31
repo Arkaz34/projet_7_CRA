@@ -16,7 +16,7 @@
     position: absolute;
     left: 8%;
     font-size: 18px;
-    color: #f6f6f6;
+    color: var(--texte-color);
     z-index: 2;
     bottom: -4px;
 }

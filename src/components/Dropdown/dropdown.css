@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FF6060;
+    background-color: var(--primary-color);
     border-radius: 5px;
     height: 48px;
     z-index: 1;
@@ -31,10 +31,10 @@
 	transition: 0.4s ease-in-out;
 }
 .drop-block-text{
-    background-color: #F7F7F7;
+    background-color: var(--secondary-ackgroung-color);
     border-radius: 10px;
     height: 0;
-    color:  #FF6060;
+    color:  var(--primary-color);
     transition: 0.4s ;
 }
 .out .drop-block-text{

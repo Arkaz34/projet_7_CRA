@@ -1,6 +1,6 @@
 import Imgbanner from '../../../assets/IMG.png'
 import React from 'react'
-import './banner.css'
+import './bannerHome.css'
 
 export default function Banner() {
     return(

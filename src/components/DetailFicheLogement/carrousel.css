@@ -1,6 +1,10 @@
 .block-carrousel{
-        border-radius: 25px;
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
+    
+}
+.img-carrousel{
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
 }

@@ -10,7 +10,10 @@ export default function FicheDrop(props) {
             </div>
             <div>
                  <h2>Equipement</h2>
-                 <ul>{props.equipements}</ul>
+                 <ul>
+                    {props.equipements.map((equipment, index) => 
+                    <li key={index} >{equipment}</li>)}
+                </ul>
              </div>
         </div>
     )
