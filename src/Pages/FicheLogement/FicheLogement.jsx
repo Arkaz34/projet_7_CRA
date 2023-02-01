@@ -1,13 +1,11 @@
 import './ficheLogement.css'
-
 import getpost from '../../Data/data.json'
-import Carrousel from '../../components/DetailFicheLogement/Carrousel';
-import Fichetitle from '../../components/DetailFicheLogement/Title'
-import Host from '../../components/DetailFicheLogement/Host'
-import Tag from '../../components/DetailFicheLogement/Content/Tag'
-import Rate from '../../components/DetailFicheLogement/Content/Rate'
-import Fichedrop from '../../components/DetailFicheLogement/Content/FicheDrop'
-//import { useState } from 'react';
+import Carrousel from '../../components/ComponentsFicheLogement/Carrousel';
+import Fichetitle from '../../components/ComponentsFicheLogement/FicheTitle'
+import Host from '../../components/ComponentsFicheLogement/Host'
+import Tag from '../../components/ComponentsFicheLogement/Content/Tag'
+import Rate from '../../components/ComponentsFicheLogement/Content/Rate'
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 export default function FicheLogement() {
 
@@ -15,10 +13,6 @@ export default function FicheLogement() {
     const data = getpost;
     const rental = data.find((item) => item.id === rentalUrlId);
     
-    //state (état, données)
-
-    //comportements
-
     //affichage (render)
     return (
         <div>
@@ -32,7 +26,8 @@ export default function FicheLogement() {
                     <Tag tags={rental.tags} />
                     <Rate score={rental.rating} />
                 </div>
-                <Fichedrop description={rental.description} equipements={rental.equipments} />
+                    <Dropdown title="description" description={rental.description} />
+                    <Dropdown title="Equipements" description={rental.equipments} />
             </section>
         </div>
     )

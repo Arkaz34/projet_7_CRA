@@ -1,4 +1,4 @@
-import './title.css'
+import './fichetitle.css'
 export default function ficheTitle(props){
 
     return(

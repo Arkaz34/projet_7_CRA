@@ -2,15 +2,11 @@
     --primary-color: #FF6060;
 }
 :root {
-    --primary-backgroung-color : #E5E5E5;
-}
-:root{
-    --secondary-ackgroung-color : #F6F6F6;
+    --primary-backgroung-color : #F7F7F7;
 }
 :root{
     --texte-color : white;
 }
-
 body{
     margin-left: 8%;
     margin-right: 8%;

@@ -9,7 +9,7 @@ export default function stars(score) {
     //affichage
     return (
         <div className="block-star">
-            {stars.map((level) => score >= level? (
+            {stars.map((level) => parseInt(score.score) >= level ? (
             <img key={level} className="star" src={starOrange} alt="rating star" />
             ):(  
             <img key={level} className="star" src={starGrey} alt="rating star" />			
