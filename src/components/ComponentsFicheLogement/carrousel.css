@@ -30,3 +30,23 @@
 .vector-left:hover{
     cursor: pointer;
 }
+/* media query mobil */
+@media only screen and (min-width: 320px) and (max-width: 600px){ 
+    .carrousel-container{
+        height: 190px;      
+    }
+    .img-carrousel{
+        border-radius: 10px;
+    }
+    .vector-block{
+        margin-top: 85px;
+    }
+    .vector-left{
+        width: 11px;
+        height: 19px;
+    }
+    .vector-right{
+        width: 11px;
+        height: 19px;
+    }
+}

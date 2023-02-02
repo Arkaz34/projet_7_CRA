@@ -1,3 +1,6 @@
+.fiche-block-title{
+    width: 100%;
+}
 .fiche-title{
     color : #FF6060;
     font-size: 36px;
@@ -6,4 +9,10 @@
 .fiche-location{
     color : #FF6060;
     font-size: 18px;
+}
+/* media query mobil */
+@media only screen and (min-width: 320px) and (max-width: 600px){ 
+    .fiche-title{
+        font-size: 18px;
+    }
 }

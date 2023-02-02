@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 380px;
 }
 .error-img{
     width: 288px;
@@ -22,4 +21,20 @@
 }
 .error-nav:hover{
     border-bottom: 2px solid #ff6060;
+}
+/* media query mobil */
+@media only screen and (min-width: 320px) and (max-width: 600px){ 
+    .error-img{
+        width: 175px;
+    }
+    .error-text{
+        font-size: 18px;
+    }
+    .error-nav{
+        font-size: 14px;
+        margin-top: 60px;
+    }
+    .block-error{
+        margin-bottom: 20px;
+    }
 }

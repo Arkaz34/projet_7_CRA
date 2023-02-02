@@ -20,3 +20,14 @@
     z-index: 2;
     bottom: -4px;
 }
+/* media query mobil */
+@media only screen and (min-width: 320px) and (max-width: 600px){ 
+    .block-card{
+        margin-top: 20px;
+    }
+    .card-txt{
+        font-size: 13px;
+        width: 210px;
+        bottom: 5px;
+    }
+}

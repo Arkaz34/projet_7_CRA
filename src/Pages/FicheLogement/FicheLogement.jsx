@@ -10,10 +10,10 @@ import Error from '../404/Error'
 
 export default function FicheLogement() {
 
-    //find retourne le première élément trouvé dans le tableau 'getpost'
-    const rental = getpost.find((item) => item.id === rentalUrlId);
     //récupère l'id après "logement/"
     const rentalUrlId = window.location.pathname.split('/').slice('-1')[0];
+    //find retourne le première élément trouvé dans le tableau 'getpost'
+    const rental = getpost.find((item) => item.id === rentalUrlId);
     //contrôle la validité de l'id dans l'url
     if (!rental) {
         return <Error />;

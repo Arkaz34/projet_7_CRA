@@ -1,4 +1,4 @@
-import Imgbanner from '../../../assets/IMG.png'
+import Imgbanner from '../../assets/IMG.png'
 import './bannerHome.css'
 
 export default function Banner() {

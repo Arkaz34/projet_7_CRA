@@ -1,10 +1,15 @@
-.block-about-info{
-    width: 100%;
+.about-block{
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
 }
-.block-info{
+.block-about-info{
     width: 90%;
+    margin-top: 20px;
+}
+/* media query mobil */
+@media only screen and (min-width: 320px) and (max-width: 600px){ 
+    .block-about-info{
+        width: 100%;
+    }
 }

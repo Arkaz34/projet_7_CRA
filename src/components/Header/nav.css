@@ -1,14 +1,17 @@
-.nav-header{
-    margin-top: 40px;
-}
 .nav-header :hover{
     border-bottom: 2px solid var(--primary-color);
 }
-
 .navbar{
     height: 26px;
     color: var(--primary-color);
     font-size: 24px;
     margin-left: 70px;
     text-decoration: none;
+}
+/* media query mobil */
+@media only screen and (min-width: 320px) and (max-width: 600px){ 
+    .navbar{
+        margin-left: 15px;
+        font-size: 12px;
+    }
 }

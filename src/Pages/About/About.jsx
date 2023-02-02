@@ -7,16 +7,14 @@ export default function APropos() {
 
     //affichage
     return (
-        <div>
+        <div className='about-block'>
             <BannerAbout />
             <section className='block-about-info'>
-                <div className='block-info'>
                     {About.map((info, index) => {
                         return (
                             <Dropdown key={index} title={info.title} description={info.description} />
                         )
                     })}
-                </div>
             </section>
         </div>
     )
