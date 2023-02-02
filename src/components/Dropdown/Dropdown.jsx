@@ -1,7 +1,7 @@
 import './dropdown.css';
 import DropdownImg from "../../assets/Vector-bottom.png";
 import { useState } from 'react';
-import Fade from '../AnimationDrop/Fade';
+import Fade from './Fade';
 
 export default function Dropdown({ title, description }) {
 

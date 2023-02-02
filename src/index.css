@@ -8,6 +8,7 @@
     --texte-color : white;
 }
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 40px;

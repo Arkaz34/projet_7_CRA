@@ -6,13 +6,19 @@ import Host from '../../components/ComponentsFicheLogement/Host'
 import Tag from '../../components/ComponentsFicheLogement/Content/Tag'
 import Rate from '../../components/ComponentsFicheLogement/Content/Rate'
 import Dropdown from '../../components/Dropdown/Dropdown';
+import Error from '../404/Error'
 
 export default function FicheLogement() {
 
-    const rentalUrlId = window.location.pathname.split('/').slice(-1)[0];
-    const data = getpost;
-    const rental = data.find((item) => item.id === rentalUrlId);
-    
+    //find retourne le première élément trouvé dans le tableau 'getpost'
+    const rental = getpost.find((item) => item.id === rentalUrlId);
+    //récupère l'id après "logement/"
+    const rentalUrlId = window.location.pathname.split('/').slice('-1')[0];
+    //contrôle la validité de l'id dans l'url
+    if (!rental) {
+        return <Error />;
+    }
+
     //affichage (render)
     return (
         <div>
@@ -26,8 +32,10 @@ export default function FicheLogement() {
                     <Tag tags={rental.tags} />
                     <Rate score={rental.rating} />
                 </div>
+                <div className='fiche-block-drop' >
                     <Dropdown title="description" description={rental.description} />
                     <Dropdown title="Equipements" description={rental.equipments} />
+                </div>
             </section>
         </div>
     )

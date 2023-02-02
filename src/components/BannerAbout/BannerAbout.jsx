@@ -1,4 +1,4 @@
-import './banner.css'
+import '..//ComponentsHome/Banner/bannerHome.css'
 import ImgBannerAbout from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
 
 

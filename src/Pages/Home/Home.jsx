@@ -1,8 +1,8 @@
-import Banner from '../../components/ComposantHome/Banner/Banner'
-import Card from '../../components/ComposantHome/Cards/Card'
+import Banner from '../../components/ComponentsHome/Banner/BannerHome'
+import Card from '../../components/ComponentsHome/Cards/Card'
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import getData from '../../Data/getData'
+import getData from '../../Data/data.json'
 import './home.css'
 
 //stocker le fichier.json dans data (getData depuis le fichier Data.json en local) dans le state

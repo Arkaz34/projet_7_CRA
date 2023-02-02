@@ -1,12 +1,12 @@
 import './about.css'
-import BannerAbout from '../../components/BannerAbout/BannerAbout'
 import About from '../../Data/dataAbout.json';
 import Dropdown from '../../components/Dropdown/Dropdown'
+import BannerAbout from '../../components/BannerAbout/BannerAbout';
 
-export default function APropos(){
+export default function APropos() {
 
     //affichage
-    return(
+    return (
         <div>
             <BannerAbout />
             <section className='block-about-info'>
