@@ -1,5 +1,5 @@
 .drop-block {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .drop-block-title {
     position: relative;
@@ -37,7 +37,7 @@
     transition: 0.4s ;
 }
 .out .drop-block-text{
-    height: 140px;
+    height: 170px;
 }
 .drop-text{
     height: 0;
@@ -49,7 +49,7 @@
     visibility: hidden
 }
 .out .drop-text{
-    padding-top: 33px;
+    padding-top: 35px;
     visibility: inherit;
 }
 /* media query mobil */
@@ -74,5 +74,11 @@
     }
     .out .drop-text{
         padding-top: 14px;
+    }
+}
+/* media query tablette */
+@media only screen and (min-width: 600px) and (max-width: 1024px){ 
+    .out .drop-text{
+        padding-top: 12px;
     }
 }

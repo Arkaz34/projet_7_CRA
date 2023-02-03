@@ -1,15 +1,15 @@
 .box-footer{
-    display: flex;
-    align-items: center;
 	height: 200px;
 	background-color: #000000;
-	flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
 }
 .imgfooter{
-    margin-top: 66px;
+    width: 145px;
+    margin-top: 47px;
 }
 .txtfooter{
-    font-size: 12px;
+    font-size: 24px;
     color: var(--texte-color);
 }
 /* media query mobil */

@@ -1,7 +1,7 @@
 .carrousel-container {
     display: flex;
     position: relative;
-    height: 410px;
+    height: 415px;
     width: 100%;
     overflow: hidden;
     margin-top: 20px;
@@ -19,13 +19,13 @@
     width: 100%;
 }
 .vector-right {
-    margin-right: 25px;
+    margin-right: 10px;
 }
 .vector-right:hover{
     cursor: pointer;
 }
 .vector-left {
-    margin-left: 25px;
+    margin-left: 10px;
 }
 .vector-left:hover{
     cursor: pointer;
@@ -48,5 +48,16 @@
     .vector-right{
         width: 11px;
         height: 19px;
+    }
+}
+/* media query tablette */
+@media only screen and (min-width: 600px) and (max-width: 1024px){ 
+    .vector-left{
+        width: 25px;
+        height: 33px;
+    }
+    .vector-right{
+        width: 25px;
+        height: 33px;
     }
 }

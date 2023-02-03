@@ -7,7 +7,7 @@ export default function APropos() {
 
     //affichage
     return (
-        <div className='about-block'>
+        <main className='about-block'>
             <BannerAbout />
             <section className='block-about-info'>
                     {About.map((info, index) => {
@@ -16,6 +16,6 @@ export default function APropos() {
                         )
                     })}
             </section>
-        </div>
+        </main>
     )
 }

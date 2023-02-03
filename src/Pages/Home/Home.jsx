@@ -18,9 +18,9 @@ export default function Home() {
 
     //affichage
     return (
-        <div className='block-home'>
+        <main className='block-home'>
             <Banner />
-            <div className='block-section-card'> 
+            <section className='block-section-card'> 
                 {data.map((appart, id) => {
                     return (
                         <Link key={id} className='link-block' to={"/logement/" + appart.id}>                                             
@@ -28,7 +28,7 @@ export default function Home() {
                         </Link>                 
                     )
                 })}
-			</div>
-        </div>  
+			</section>
+        </main>  
     );
 }

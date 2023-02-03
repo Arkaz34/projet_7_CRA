@@ -3,8 +3,8 @@ import getpost from '../../Data/data.json'
 import Carrousel from '../../components/ComponentsFicheLogement/Carrousel';
 import Fichetitle from '../../components/ComponentsFicheLogement/FicheTitle'
 import Host from '../../components/ComponentsFicheLogement/Host'
-import Tag from '../../components/ComponentsFicheLogement/Content/Tag'
-import Rate from '../../components/ComponentsFicheLogement/Content/Rate'
+import Tag from '../../components/ComponentsFicheLogement/Tag'
+import Rate from '../../components/ComponentsFicheLogement/Rate'
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Error from '../404/Error'
 
@@ -21,22 +21,22 @@ export default function FicheLogement() {
 
     //affichage (render)
     return (
-        <div>
-            <section>
-                <Carrousel pictures={rental.pictures} />
+        <main className='container-fiche'>
+            <Carrousel pictures={rental.pictures} />
+            <div className='container-title-name'>
                 <div className='fiche-block-logement'>
                     <Fichetitle titre={rental.title} location={rental.location} />
-                    <Host name={rental.host.name} picture={rental.host.picture} />
+                    <Tag tags={rental.tags} />
                 </div>
                 <div className='fiche-block-content'>
-                    <Tag tags={rental.tags} />
+                    <Host name={rental.host.name} picture={rental.host.picture} />
                     <Rate score={rental.rating} />
                 </div>
-                <div className='fiche-block-drop' >
-                    <Dropdown title="description" description={rental.description} />
-                    <Dropdown title="Equipements" description={rental.equipments} />
-                </div>
-            </section>
-        </div>
+            </div>
+            <div className='fiche-block-drop' >
+                <Dropdown title="description" description={rental.description} />
+                <Dropdown title="Equipements" description={rental.equipments} />
+            </div>
+        </main>
     )
 };

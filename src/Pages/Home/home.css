@@ -1,5 +1,8 @@
 .block-home{
-    margin-bottom: 30px;
+    margin-bottom: 20px;    
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 .block-section-card {
     background-color: var(--primary-backgroung-color);
@@ -11,7 +14,7 @@
     padding-bottom: 20px;
 }
 .link-block{
-    width: 330px;
+    width: 340px;
     position: relative;
     margin-top: 20px;
 }
@@ -19,5 +22,14 @@
 @media only screen and (min-width: 320px) and (max-width: 600px){ 
     .block-section-card{
         display: contents;
+    }
+}
+/* media query tablette */
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    .link-block{
+        width: 260px;
+    }
+    .block-section-card{
+        justify-content: space-evenly;
     }
 }

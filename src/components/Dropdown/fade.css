@@ -5,7 +5,7 @@
 }
 .fade.out{
     opacity: 1;
-    height: 125px;
+    height: 160px;
 }
 /* media query mobil */
 @media only screen and (min-width: 320px) and (max-width: 600px){ 

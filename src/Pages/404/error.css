@@ -1,23 +1,24 @@
 .block-error{
-    margin-top: 140px;
+    margin-top: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 860px;
 }
 .error-img{
-    width: 288px;
+    width: 597px;
 }
 .error-text{
-    font-size: 30px;
+    font-size: 36px;
     color: #FF6060;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 .error-nav{
     color: #FF6060;
     text-decoration: none;
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 220px;
 }
 .error-nav:hover{
     border-bottom: 2px solid #ff6060;
@@ -35,6 +36,20 @@
         margin-top: 60px;
     }
     .block-error{
-        margin-bottom: 20px;
+        margin-top: 150px;
+        height: 500px;
     }
 }
+/* media query tablette */
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    .error-img{
+        width: 300px;
+    }
+    .error-text{
+        font-size: 23px;
+    }
+    .error-nav{
+        margin-top: 120px;
+        font-size: 12px;
+    }
+} 

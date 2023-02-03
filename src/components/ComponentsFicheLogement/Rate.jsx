@@ -1,6 +1,6 @@
 import './rate.css'
-import starOrange from '../../../assets/Star-orange.png'
-import starGrey from '../../../assets/Star-grey.png'
+import starOrange from '../../assets/Star-orange.png'
+import starGrey from '../../assets/Star-grey.png'
 
 export default function stars(score) {
 
