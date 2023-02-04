@@ -1,5 +1,4 @@
 .container-fiche{
-  height: 1195px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -16,11 +15,14 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+.fiche-block-drop > * { 
+  max-width: 48%; width: 100%; 
+}
+.equipements{
+  list-style-type: none;
+}
 /* media query mobil */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-  .container-fiche{
-    height: 600px;
-  }
   .container-title-name{
         display: block;
     }
@@ -29,4 +31,11 @@
         flex-direction: row-reverse;
         align-items: center;
     }
+    .fiche-block-drop{
+      display: block;
+    }
+    .fiche-block-drop > * { 
+      max-width: 100%;  
+    }
+    
 }

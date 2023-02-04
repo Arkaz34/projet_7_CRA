@@ -15,8 +15,8 @@
     color: var(--texte-color);
     position: absolute;
     top: 43px;
-    left: 18%;
-    font-size: 43px;
+    left: 25%;
+    font-size: 48px;
     font-weight: 500;
 }
 /* media query mobil */
@@ -39,8 +39,8 @@
 /* media query tablette */
 @media only screen and (min-width: 600px) and (max-width: 1024px){ 
     .banner-text{
-        font-size: 27px;
-        left: 17%;
-        top: 68px;
+        font-size: 32px;
+        left: 21%;
+        top: 63px;
     }
 }

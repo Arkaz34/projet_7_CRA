@@ -1,4 +1,4 @@
-.about-block{
+.container-about{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,8 +7,7 @@
 }
 .block-about-info{
     width: 90%;
-    margin-top: 40px;
-    height: 950px;
+    margin-top: 20px;
 }
 /* media query mobil */
 @media only screen and (min-width: 320px) and (max-width: 600px){ 

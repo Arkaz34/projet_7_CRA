@@ -15,8 +15,8 @@ export default function Dropdown({ title, description }) {
 
     //affichage (render)
     return (
-        <div className='drop-block'>
-            <div onClick={toggle} className='drop-block-title'>
+        <div>
+            <div onClick={toggle} className='block-title'>
                 <h2 className='drop-title'>{title}</h2>
                 <img
                     src={DropdownImg}
@@ -24,11 +24,7 @@ export default function Dropdown({ title, description }) {
                     className={closed ? "drop-img rotated" : "drop-img"}
                 />
             </div>
-            <Fade hide={closed}>
-                <div className='drop-block-text'>
-                    <p className='drop-text'>{description}</p>
-                </div>
-            </Fade>
+            <Fade hide={closed} children={description}/>
         </div>
     )
 }

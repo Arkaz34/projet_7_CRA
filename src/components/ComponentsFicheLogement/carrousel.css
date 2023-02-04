@@ -60,4 +60,7 @@
         width: 25px;
         height: 33px;
     }
+    .carrousel-container{
+        height: 360px;
+    }
 }

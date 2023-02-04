@@ -7,7 +7,7 @@ export default function APropos() {
 
     //affichage
     return (
-        <main className='about-block'>
+        <main className='container-about'>
             <BannerAbout />
             <section className='block-about-info'>
                     {About.map((info, index) => {

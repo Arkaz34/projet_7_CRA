@@ -8,6 +8,8 @@ export default function Fade({ hide, children }) {
     }
 
     return (
-    <div className={className}>{children}</div>
+        <div className={className}>
+            <p className='drop-text'>{children}</p>
+        </div>
     )
 }
