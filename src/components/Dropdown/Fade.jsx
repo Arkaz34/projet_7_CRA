@@ -1,15 +1,11 @@
 import './fade.css'
 
-export default function Fade({ hide, children }) {
+export default function Fade({ hide, text }) {
     
-    let className = 'fade';
-    if (!hide) {
-        className += ' out';
-    }
-
+    //affichage(render)
     return (
-        <div className={className}>
-            <p className='drop-text'>{children}</p>
+        <div className={hide ? "fade" : "out"}>
+            <p className='drop-text'>{text}</p>
         </div>
     )
 }

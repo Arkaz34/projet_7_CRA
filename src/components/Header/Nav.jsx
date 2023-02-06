@@ -5,9 +5,9 @@ export default function Nav(){
 
     //affichage
     return(
-       <nav className="nav-header">
-            <Link to="/" className='navbar'>Accueil</Link>
-            <Link to="/About" className='navbar'>A propos</Link>
+       <nav>
+            <Link to="/" className='navbar link-home'>Accueil</Link>
+            <Link to="/About" className='navbar link-about'>A propos</Link>
        </nav> 
     );
 }

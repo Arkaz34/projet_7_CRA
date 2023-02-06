@@ -21,46 +21,62 @@
 .vector-right {
     margin-right: 10px;
 }
-.vector-right:hover{
+.vector-right:hover {
     cursor: pointer;
 }
 .vector-left {
     margin-left: 10px;
 }
-.vector-left:hover{
+.vector-left:hover {
     cursor: pointer;
 }
+.count {
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 49%;
+    color: white;
+    font-size: 18px;
+}
+.count-none{
+    display: none;
+}
 /* media query mobil */
-@media only screen and (min-width: 320px) and (max-width: 600px){ 
-    .carrousel-container{
-        height: 190px;      
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .carrousel-container {
+        height: 190px;
     }
-    .img-carrousel{
+    .img-carrousel {
         border-radius: 10px;
     }
-    .vector-block{
+    .vector-block {
         margin-top: 85px;
     }
-    .vector-left{
+    .vector-left {
         width: 11px;
         height: 19px;
     }
-    .vector-right{
+    .vector-right {
         width: 11px;
         height: 19px;
+    }
+    .count{
+        display: none;
     }
 }
 /* media query tablette */
-@media only screen and (min-width: 600px) and (max-width: 1024px){ 
-    .vector-left{
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .vector-left {
         width: 25px;
         height: 33px;
     }
-    .vector-right{
+    .vector-right {
         width: 25px;
         height: 33px;
     }
-    .carrousel-container{
+    .carrousel-container {
         height: 360px;
+    }
+    .count{
+        margin-top: 310px;
     }
 }
