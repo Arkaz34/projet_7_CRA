@@ -7,6 +7,8 @@ import About from './Pages/About/About'
 import Footer from './components/Footer/Footer'
 
 export default function App() {
+
+  //affichage
   return (
     <div>
       <Header />
@@ -16,8 +18,7 @@ export default function App() {
         <Route path="*" element={<Error />} />
         <Route path="/About" element={<About />} />
       </Routes>
-      <Footer />
-      
+      <Footer />      
     </div>
   );
 }

@@ -8,7 +8,6 @@ export default function Carrousel(pictures) {
     //state (état, données)
     let [indexPictures, setIndexPictures] = useState(0);
     let length = pictures.pictures.length;
-    console.log(length);
 
     //comportements
     let nextPicture = () => {

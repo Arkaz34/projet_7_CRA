@@ -7,7 +7,7 @@ import './home.css'
 
 //stocker le fichier.json dans data (getData depuis le fichier Data.json en local) dans le state
 export default function Home() {
-
+    
     //state (état, données)
     const [data, setData] = useState([]);
 

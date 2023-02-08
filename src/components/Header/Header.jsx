@@ -3,6 +3,8 @@ import Nav from './Nav'
 import './header.css'
 
 export default function Header(){
+
+    //afichage
     return(
         <header className='header'>
             <img className="logo" src={logo} alt="logo de l'agence Kasa"/>
@@ -10,5 +12,3 @@ export default function Header(){
         </header>
     );
 }
-
- 

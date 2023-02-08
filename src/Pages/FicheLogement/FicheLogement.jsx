@@ -19,8 +19,6 @@ export default function FicheLogement() {
         return <Error />;
     }
 
-    //modification du css du composant dropdown
-
     //affichage (render)
     return (
         <main className='container-fiche'>
@@ -40,7 +38,7 @@ export default function FicheLogement() {
                 <Dropdown
                     title="Equipements"
                     description={rental.equipments.map((equipement, index) =>
-                        <li key={index} className='equipements'>{equipement}</li>)}                  
+                        <li key={index} className='equipements'>{equipement}</li>)}
                 />
             </div>
         </main>
